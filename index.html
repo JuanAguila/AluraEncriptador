@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    
     <title>Encriptador</title>
 </head>
 <body>
@@ -21,18 +22,19 @@
                 <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botones">
-                <button class="btnEncriptar">Encriptar</button>
-                <button class="btnDesencriptar">Desencriptar</button>
+                <button class="btnEncriptar" onclick="fnEncriptar()">Encriptar</button>
+                <button class="btnDesencriptar" onclick="fnDesencriptar()">Desencriptar</button>
             </div>
             
         </section>
         <section>
-            <textarea class="textDesncriptador" cols="30" rows="10" placeholder="Ningun mensaje fue encontrado"></textarea>
+            <textarea readonly class="textDesncriptador" cols="32" rows="10" placeholder="Ningun mensaje fue encontrado"></textarea>
             <div>
                 <button class="btnCopiar">Copiar</button>
             </div>
         </section>
     </main>
+    <script src="/js/script.js"></script>
 </body>
 <footer>
 
