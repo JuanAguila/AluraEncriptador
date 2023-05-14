@@ -24,7 +24,6 @@ function encriptar(strEncriptador){
 function fnDesencriptar(){
     const textDesencriptado = desEncriptar(textArea.value)
     textDescriptador.value = textDesencriptado
-    
 }
 
 function desEncriptar(strDesencriptador){
@@ -48,4 +47,17 @@ function desEncriptar(strDesencriptador){
         }
     }
     return strDesencriptador
+}
+
+function copiar(){
+
+   var copiando = document.querySelector(".textDesncriptador"); 
+    
+   copiando.select();
+   copiando.setSelectionRange(0,99999);
+
+   navigator.clipboard.writeText(copiando.value);
+
+   alert("ha copiado el texto: "+copiando.value);
+    
 }

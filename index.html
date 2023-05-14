@@ -12,14 +12,14 @@
     <title>Encriptador</title>
 </head>
 <body>
-    <header>
+    <header class="headLogo">
         <img src="img/Logo.png" alt="logoAlura" class="logoAlura">
     </header>
     <main>
-        <section>
-            <textarea class="textEncriptador" cols="30" rows="10" placeholder="Ingrese aqui el texto"></textarea>
+        <section class="clsEncriptado">
+            <textarea class="textEncriptador" placeholder="Ingrese aqui el texto"></textarea>
             <div>
-                <h6 class="informacion">Solo letras minúsculas y sin acentos</h6>
+                <h6 class="informacion">✔ Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botones">
                 <button class="btnEncriptar" onclick="fnEncriptar()">Encriptar</button>
@@ -27,10 +27,10 @@
             </div>
             
         </section>
-        <section>
+        <section class="clsDesencriptado">
             <textarea readonly class="textDesncriptador" cols="32" rows="10" placeholder="Ningun mensaje fue encontrado"></textarea>
             <div>
-                <button class="btnCopiar">Copiar</button>
+                <button class="btnCopiar" onclick="copiar()">Copiar</button>
             </div>
         </section>
     </main>
