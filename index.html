@@ -22,15 +22,18 @@
                 <h6 class="informacion">✔ Solo letras minúsculas y sin acentos</h6>
             </div>
             <div class="botones">
-                <button class="btnEncriptar" onclick="fnEncriptar()">Encriptar</button>
-                <button class="btnDesencriptar" onclick="fnDesencriptar()">Desencriptar</button>
+                <button class="btnEncriptar" onclick="fnEncriptar()" type="button">Encriptar</button>
+                <button class="btnDesencriptar" onclick="fnDesencriptar()" type="button">Desencriptar</button>
             </div>
             
         </section>
         <section class="clsDesencriptado">
-            <textarea readonly class="textDesncriptador" cols="32" rows="10" placeholder="Ningun mensaje fue encontrado"></textarea>
             <div>
-                <button class="btnCopiar" onclick="copiar()">Copiar</button>
+                <textarea readonly class="textDesncriptador"  rows="8" placeholder="Ningun mensaje fue encontrado"></textarea> 
+            </div>
+            
+            <div>
+                <button class="btnCopiar" onclick="copiar()" type="button">Copiar</button>
             </div>
         </section>
     </main>
