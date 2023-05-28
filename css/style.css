@@ -24,15 +24,19 @@ main{
 .logoAlura{
     width: 100px;
     height: auto;
+    margin-top: 20px;
 }
 
-
+.imgFondo{
+    width: 400px;
+    align-self: center;
+}
 
 .textEncriptador{
     border: none;
     color: #0A3871;
     text-transform: lowercase;
-    width: 80%;
+    width: 100%;
 }
 
 ::placeholder{color: #0A3871;}
@@ -41,15 +45,11 @@ main{
 }
 
 .textDesncriptador{
-    background: white;
-    background-image: url("../img/muneco.png");
-    background-repeat: no-repeat;
-    background-position: center;
     border: none;
     border-radius: 24px;
     color: #0A3871;
-    align-content: center;
-    
+    text-align: center;
+    width: 100%;
 }
 .textDesncriptador:focus{
     outline: none;
@@ -82,6 +82,14 @@ main{
     margin-left: 1svw;
 }
 
+.divImgFondo{
+      text-align: center;
+}
+
+.divbtnCopiar{
+    text-align: center;
+}
+
 .btnCopiar{
     
     border: 1px solid #0A3871;
@@ -97,6 +105,7 @@ main{
 .informacion{
     color: #495057;
     font-size: 18px;
+    padding-top: 28%;
 }
 
 @media screen and (max-width:800px){
@@ -105,15 +114,24 @@ main{
         width: 100%;
         
     }
+    .textDesncriptador,.textEncriptador{
+        max-width: 100%;
+        max-height: auto;
+        font-size: 80%;
+        text-align: center;
+
+    }
     .botones{
         margin-left: 0%;
         margin-top: 5%;
         display: flex;
         flex-wrap: wrap;
+        padding-top: 2%;
     }
     .btnDesencriptar{
         margin-top: 2%;
         margin-bottom: 2%;
+        margin-left: 0;
     }
 
 }

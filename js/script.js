@@ -1,11 +1,12 @@
 const textArea = document.querySelector(".textEncriptador");
 const textDescriptador = document.querySelector(".textDesncriptador");
+const imgFondo = document.querySelector(".imgFondo");
 
 
 function fnEncriptar(){
     const textEncriptado = encriptar(textArea.value)
     textDescriptador.value = textEncriptado
-    textDescriptador.style.backgroundImage = "none"
+    imgFondo.style.visibility='hidden'
 }
 
 function encriptar(strEncriptador){
